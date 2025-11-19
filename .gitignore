@@ -1,0 +1,96 @@
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.log
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual envs
+venv/
+.env/
+.venv/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# ----------------------------
+# ML / DL model artifacts
+# ----------------------------
+*.h5
+*.tflite
+*.tflite.zip
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.joblib
+*.sav
+
+# TensorBoard
+logs/
+events.out.tfevents*
+
+# MLflow
+mlruns/
+mlflow_runs/mlartifacts/
+mlflow_runs/*/artifacts/
+
+# Data files
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ----------------------------
+# ESP32 / Arduino
+# ----------------------------
+*.bin
+*.elf
+*.hex
+*.map
+
+# PlatformIO
+.pio/
+pio_build/
+
+# Arduino build
+*.cpp.o
+*.d
+*.dep
+
+# TFLite Micro generated files
+esp32/tflite_micro_runtime/build/
+esp32/model.cc   # if auto-generated; remove if you commit manually
+
+# ----------------------------
+# OS Specific
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# VS Code / JetBrains
+# ----------------------------
+.vscode/
+.idea/
+
+# ----------------------------
+# Cache
+# ----------------------------
+.cache/
+*.swp
+*.swo
+
+# ----------------------------
+# Environment files
+# ----------------------------
+*.env
+*.secret
+credentials.json

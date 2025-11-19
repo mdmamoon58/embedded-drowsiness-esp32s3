@@ -1,4 +1,35 @@
-# ----------------------------
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+drowsy/
+.venv/
+venv/
+env/
+
+# Data (keep only metadata CSV)
+data/raw/
+data/processed/**
+!data/processed/labels_subjects.csv
+
+# Model artifacts
+models/**
+*.h5
+*.keras
+*.tflite
+
+# Logs & tracking
+logs/
+mlflow_tracking/
+
+# Packaging/build
+DriverDrowsinessDetection.egg-info/
+dist/
+build/# ----------------------------
 # Python
 # ----------------------------
 __pycache__/

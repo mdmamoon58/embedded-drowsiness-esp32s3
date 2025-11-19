@@ -1,9 +1,3 @@
-Below is a **clean, professional, GitHub-friendly README.md** version of what you wrote — polished, formatted, and clear for recruiters, hackathons, and collaborators.
-
-You can paste this directly into your repo’s `README.md`.
-
----
-
 # 🚗 **Embedded Driver Drowsiness Detection (ESP32-S3 + TinyML)**
 
 Real-time, on-device drowsiness detection using **ESP32-S3**, **TensorFlow Lite Micro**, and **TinyML-optimized CNNs**.
@@ -83,12 +77,6 @@ driver_drowsiness_project/
 │   ├── camera_config.h
 │   ├── tflite_micro_runtime/    # TFLM runtime for ESP32
 │
-├── mlflow_runs/
-│   ├── run_baseline.py
-│   ├── run_dscnn.py
-│   ├── run_dscnn2.py
-│   ├── compare_models.py
-│
 ├── requirements.txt
 └── README.md
 ```
@@ -101,7 +89,6 @@ driver_drowsiness_project/
 
 * TensorFlow / Keras
 * TensorFlow Lite & TFLite Micro
-* MLflow (experiment tracking)
 * Python, NumPy, OpenCV
 
 ### 🧩 Embedded Deployment
@@ -126,24 +113,6 @@ driver_drowsiness_project/
    * Optional: vibration motor
 
 All inference happens **on-device** — no WiFi, no cloud, no external compute.
-
----
-
-# 📊 **MLflow Integration**
-
-This repository uses MLflow for:
-
-✔ Logging training runs
-✔ Comparing baseline vs DS-CNN models
-✔ Tracking accuracy/loss
-✔ Storing `.tflite` and `.cc` artifacts
-
-Example:
-
-```bash
-python mlflow_runs/run_dscnn2.py
-mlflow ui
-```
 
 ---
 
